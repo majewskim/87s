@@ -1,0 +1,147 @@
+@import url(reset.css);
+* {
+	box-sizing: border-box;
+}
+html,body {
+	height: 100%;
+}
+body {
+	background: #000;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	transition: all ease-out 0.1s;
+	// height: 100%;
+	// position: relative;
+	&.inverted {
+		background: #fff;
+		color: #000;
+		a {
+			color: #000;
+		}
+	}
+}
+::selection {
+    background: #fe57a1;
+    color: #fff;
+    text-shadow: none;
+}
+a {
+	color: #fff;
+	text-decoration: underline;
+	transition: all ease-out 0.1s;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.container {
+	padding: 60px 80px 0px 50px;
+	margin-bottom: -228px;
+	min-height: 100%;
+	&:after {
+		content: "";
+		height: 228px;
+		display: block;
+	}
+}
+h1 {
+	font-size: 24px;
+	text-transform: uppercase;
+	line-height: 30px;
+}
+small {
+	font-size: 11px;
+}
+.wallpaper {
+	font-size: 11px;
+}
+
+footer {
+	padding: 0px 80px 0px 50px;
+	width: 100%;
+	height: 148px;
+	position: relative;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	h1 {
+		margin-bottom: 15px;
+	}
+	nav {
+		font-size: 11px;
+		line-height: 16px;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+		span {
+			text-decoration: underline;
+			text-transform: none;
+		}
+		a {
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	#copy {
+		font-size: 14px;
+		img,span {
+			float: left;
+		}
+		.divider {
+			margin: 0px 20px;
+		}
+		#summers {
+			margin-top: -8px
+		}
+		#justsay {
+			margin: -4px 20px 0px 20px;
+		}
+		#cat {
+			margin-top: -6px;
+		}
+	}
+	.bullets {
+		position: absolute;
+		bottom: 0px;
+		right: 80px;
+		cursor: pointer;
+		.bullet {
+			display: block;
+			float: left;
+			width: 14px;
+			height: 14px;
+			border: 1px solid #fff;
+			border-radius: 50%;
+			padding-bottom: 10px;
+			margin-right: 5px;
+			background: #000;
+			&.white {
+				background: #fff;
+				border: 1px solid #000;
+			}
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.bullets {
+		display: none;
+	}
+	footer {
+		#copy {
+			img,span {
+				display: block;
+				margin: 10px 0px !important;
+				float: none;
+			}
+			.divider {
+				display: none;
+			}
+		}
+	}
+
+}

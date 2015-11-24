@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="87">
+	<head>
+		<title>87S & Co.</title>
+		<base href="/87/">
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+	</head>
+	<body ng-controller="MainController as mainCtrl">
+		<div class="container" ng-view></div>
+		<footer>
+			<h1>
+			<a href="/">87s and co.</a>
+			</h1>
+			<nav>
+				<ul>
+					<li><span>here</span> / <a href="social">and co. social</a> / <a href="manifesto">manifesto</a></li>
+					<li><span>there</span> / <a href="http://87summers.com/" target="_blank">87 summers</a> / <a href="http://justsaywhen.co.uk/" target="_blank">just say when</a></li>
+					<li><span>connect</span> / <a href="http://twitter.com/87SCo" target="_blank">twitter</a> / <a href="https://www.facebook.com/87sco" target="_blank">facebook</a> / <a href="#">a mouse</a></li>
+					<li><span>contact</span> / <a href="mailto:hello@87s.co">hello <span>(is it me you're looking for)</span> at 87s dot co</a>
+				</ul>
+			</nav>
+			<section id="copy">
+				<span>&copy; 2015 - NOW</span>
+				<span class="divider"> / </span><img id="87s" height="12" class="footer-image">
+				<span class="divider"> / </span>
+				<a href="http://www.87summers.com" target="_blank"><img height="32" id="summers" class="footer-image"></a>
+				<a href="http://www.justsaywhen.co.uk" target="_blank"><img height="16" id="justsay" class="footer-image"></a>
+				<a href="/"><img height="16" id="cat" class="footer-image"></a>
+			</section>
+			<div class="bullets">
+				<div class="bullet" ng-click="invert(blackColour)"></div>
+				<div class="bullet white" ng-click="invert(whiteColour)"></div>
+			</div>
+		</footer>
+	</body>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/build/all.min.js"></script>
+</html>

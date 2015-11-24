@@ -1,0 +1,20 @@
+{
+  "name": "87s_and_co.",
+  "version": "1.0.0",
+  "description": "87s and co. website",
+  "main": "js/build/all.min.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "Mateusz Majewski",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-mocks": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "gulp-concat": "^2.6.0",
+    "gulp-jslint": "^0.2.2",
+    "gulp-uglify": "^1.5.1",
+    "jshint": "^2.8.0"
+  }
+}
