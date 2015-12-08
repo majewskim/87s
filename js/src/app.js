@@ -18,6 +18,12 @@ app.config(function ($routeProvider, $locationProvider) {
         .when('/manifesto', {
             templateUrl: 'templates/manifesto.html'
         })
+        .when('/charities', {
+            templateUrl: 'templates/charities.html'
+        })
+        .when('/credits', {
+            templateUrl: 'templates/credits.html'
+        })
         .otherwise({
             redirectTo: '/'
         });

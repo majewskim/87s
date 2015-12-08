@@ -10,6 +10,7 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #fff;
 	font-size: 24px;
+	line-height: 30px;
 	font-weight: 700;
 	transition: all ease-out 0.1s;
 	// height: 100%;
@@ -36,7 +37,7 @@ a {
 	}
 }
 .container {
-	padding: 60px 80px 0px 50px;
+	padding: 58px 80px 0px 50px;
 	margin-bottom: -228px;
 	min-height: 100%;
 	&:after {
@@ -46,12 +47,12 @@ a {
 	}
 }
 h1 {
-	font-size: 24px;
 	text-transform: uppercase;
-	line-height: 30px;
 }
 small {
 	font-size: 11px;
+	display: block;
+	line-height: 17px;
 }
 .wallpaper {
 	font-size: 11px;
@@ -64,6 +65,12 @@ footer {
 	position: relative;
 	margin-bottom: 40px;
 	margin-top: 40px;
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 	h1 {
 		margin-bottom: 15px;
 	}
@@ -76,17 +83,17 @@ footer {
 			text-decoration: underline;
 			text-transform: none;
 		}
-		a {
-			text-decoration: none;
-			&:hover {
-				text-decoration: underline;
-			}
-		}
 	}
 	#copy {
-		font-size: 14px;
-		img,span {
+		font-size: 11px;
+		line-height: 14px;
+		img, span {
 			float: left;
+		}
+		img {
+			&:hover {
+				opacity: 0.8;
+			}
 		}
 		.divider {
 			margin: 0px 20px;
@@ -128,20 +135,38 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-	.bullets {
-		display: none;
+	.container, footer {
+		padding: 20px;
+	}
+	body {
+		font-size: 16px;
+		line-height: 22px;
 	}
 	footer {
-		#copy {
-			img,span {
-				display: block;
-				margin: 10px 0px !important;
-				float: none;
+		nav {
+			font-size: 9px;
+			line-height: 14px;
+		}
+		.bullets {
+			bottom: 110px;
+			right: 20px;
+		}
+		span {
+			&:first-child {
+				width: 100%;
+				margin-bottom: 20px;
 			}
-			.divider {
+			&:nth-child(2) {
 				display: none;
 			}
 		}
+		#copy {
+			#justsay {
+				margin-top: 0px;
+			}
+			#cat {
+				margin-top: -2px;
+			}
+		}
 	}
-
 }
